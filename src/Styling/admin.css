@@ -55,12 +55,12 @@
 }
 .admin-table-conta{
   overflow: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer/Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .admin-table-conta::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;  
 }
 
 
