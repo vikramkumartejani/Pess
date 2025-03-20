@@ -1,0 +1,21 @@
+.header-container {
+  background: white;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 5px 21px -5px #cdd1e1;
+  -webkit-box-shadow: 0px 5px 21px -5px #CDD1E1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 45px;
+}
+
+.menu-container .menu-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-top: 7px;
+}

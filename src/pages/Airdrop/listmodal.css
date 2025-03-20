@@ -1,0 +1,103 @@
+.list-modal {
+  width: 100%;
+}
+
+.list-modal-info {
+  padding: 20px;
+}
+
+.list-modal-header-item {
+  margin-bottom: 10px;
+}
+
+.list-modal-label {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+.list-modal-value {
+  margin-left: 5px;
+}
+
+.list-modal-table-container {
+  padding: 10px 20px 40px 20px;
+  overflow-x: auto;
+}
+
+.list-modal-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-modal-table th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e8e8e8; 
+}
+.list-modal-table td {
+  padding: 16px 12px;
+  text-align: left;
+}
+
+.list-modal-table th {
+  font-weight: 500;
+  background-color: #fafafa;
+}
+
+.block-button {
+  color: #ff4747;
+  border: 1px solid #ff4747;
+  background: white;
+  border-radius: 15px;
+  padding: 6px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.block-button:hover {
+  background-color: #ff4747;
+  border-color: #ff4747;
+  color: white;
+}
+.block-button.blocked {
+  background-color: #ff4747;
+  border-color: #ff4747;
+  color: white;
+}
+
+.block-button:active {
+  box-shadow: 0 0 0 0.2rem rgba(255, 71, 71, 0.5);
+}
+
+.download-container {
+  display: flex;
+  border-top: 1px solid #ced4da;
+  padding: 15px 31px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.download-button {
+  height: 44px;
+  background-color: transparent;
+  color: #248afd;
+  border: 1px solid #248afd;
+  border-radius: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.download-button:active {
+  box-shadow: 0 0 0 0.2rem rgba(36, 138, 253, 0.5);
+}
+
+.download-button:hover {
+  background-color: #248afd;
+  color: white;
+
+}
