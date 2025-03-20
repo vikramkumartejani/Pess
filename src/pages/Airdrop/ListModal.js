@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './listmodal.css'
+import '../../Styling/listmodal.css'
 
 const ListModal = ({ airdrop }) => {
     const [applicants, setApplicants] = useState([

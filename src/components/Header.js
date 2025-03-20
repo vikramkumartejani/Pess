@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.svg'
-import './Header.css'
-import { IoIosMenu } from "react-icons/io";
+import '../Styling/Header.css'
 import { IoMenu } from "react-icons/io5";
 
 

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './airdrop.css';
 import AddAirdropModal from './Airdrop/AddAirdropModal';
 import DetailsModal from './Airdrop/DetailsModal';
 import ListModal from './Airdrop/ListModal';
+import '../Styling/airdrop.css'
 
 const Airdrop = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

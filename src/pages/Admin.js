@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { RxCross1 } from "react-icons/rx";
-import './admin.css';
+import '../Styling/admin.css';
 
 const Admin = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

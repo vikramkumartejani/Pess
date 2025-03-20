@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from '../../components/Calendar'
 
 const AddAirdropModal = () => {
     return (
@@ -26,7 +27,7 @@ const AddAirdropModal = () => {
                     </div>
                     <div className="form-group">
                         <label>End date</label>
-                        <input type="date" />
+                        <Calendar/>
                     </div>
                 </div>
 

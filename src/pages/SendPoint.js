@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './sendpoint.css';
+import '../Styling/sendpoint.css';
 
 const SendPoint = () => {
     const [textValue, setTextValue] = useState('');
