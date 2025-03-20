@@ -3,7 +3,7 @@ import Calendar from '../../components/Calendar'
 
 const AddAirdropModal = () => {
     return (
-        <form>
+        <div>
             <div className='airdrop-modal-content'>
                 <div className="form-row">
                     <div className="form-group">
@@ -23,7 +23,7 @@ const AddAirdropModal = () => {
                 <div className="form-row">
                     <div className="form-group">
                         <label>Start date</label>
-                        <input type="date" />
+                        <Calendar/>
                     </div>
                     <div className="form-group">
                         <label>End date</label>
@@ -67,7 +67,7 @@ const AddAirdropModal = () => {
             <div className="form-actions">
                 <button className="save-button">save</button>
             </div>
-        </form>
+        </div>
     )
 }
 

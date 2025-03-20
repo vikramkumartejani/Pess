@@ -17,6 +17,7 @@
 }
 
 .airdrop-title {
+  /* text-overflow: ellipsis; */
   font-size: 18px;
   font-weight: 800;
   color: #333;
@@ -48,7 +49,7 @@
 }
 
 .airdrop-table-container {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .airdrop-table {
@@ -59,12 +60,14 @@
 .airdrop-table th {
   text-align: left;
   padding: 16px;
+  white-space: nowrap;
   font-weight: 700;
   color: #333;
   border-bottom: 1px solid #e0e0e0;
 }
 
 .airdrop-table td {
+  white-space: nowrap;
   padding: 16px;
   border-bottom: 1px solid #e0e0e0;
   color: #666;
@@ -317,4 +320,13 @@
   background-color: #d9a400;
   border-color: #cc9a00;
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 6, 0.5);
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .airdrop-maincontainer  {
+    padding: 20px 16px;
+  }
 }

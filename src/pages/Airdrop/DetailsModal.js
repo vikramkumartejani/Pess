@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from '../../components/Calendar';
 
 const DetailsModal = () => {
     const handleDelete = () => {
@@ -31,11 +32,11 @@ const DetailsModal = () => {
                 <div className="form-row">
                     <div className="form-group">
                         <label>Start date</label>
-                        <input type="date" />
+                        <Calendar/>
                     </div>
                     <div className="form-group">
                         <label>End date</label>
-                        <input type="date" />
+                        <Calendar/>
                     </div>
                 </div>
 

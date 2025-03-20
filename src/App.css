@@ -18,3 +18,13 @@
   justify-content: space-between;
   flex-direction: column;
 }
+
+.sidebar-responsive{
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar-responsive {
+    display: none;
+  }
+}

@@ -74,24 +74,26 @@ const Admin = () => {
                     <button className='add-admin-btn' onClick={openModal}>Add admin</button>
                 </div>
 
-                <table className='admin-table'>
-                    <thead>
-                        <tr>
-                            <th>Level</th>
-                            <th>Email</th>
-                            <th>Register date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {admins.map((admin, index) => (
-                            <tr key={index}>
-                                <td>{admin.level}</td>
-                                <td>{admin.email}</td>
-                                <td>{admin.registerDate}</td>
+                <div className='admin-table-conta'>
+                    <table className='admin-table'>
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Email</th>
+                                <th>Register date</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {admins.map((admin, index) => (
+                                <tr key={index}>
+                                    <td>{admin.level}</td>
+                                    <td>{admin.email}</td>
+                                    <td>{admin.registerDate}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             {isModalOpen && (

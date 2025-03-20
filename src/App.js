@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <div className='layout'>
-        <div className=''>
+        <div className='sidebar-responsive'>
           <Sidebar />
         </div>
         <main className='main-container' style={{ background: "#F5F7FF" }}>

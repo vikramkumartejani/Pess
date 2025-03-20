@@ -119,7 +119,7 @@ const Airdrop = () => {
             {/* Add Airdrop Modal */}
             {isModalOpen && (
                 <div className="modal-overlay">
-                    <div className="modal-container" ref={modalRef}>
+                    <div className="modal-container"ref={modalRef} >
                         <div className="modal-header">
                             <h2>Add Airdrop</h2>
                             <button className="close-button" onClick={closeModal}>×</button>

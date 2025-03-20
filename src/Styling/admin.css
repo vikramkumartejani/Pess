@@ -53,6 +53,9 @@
 .add-admin-btn:active {
   box-shadow: 0 0 0 3px #57b6576b;
 }
+.admin-table-conta{
+  overflow: scroll;
+}
 
 .admin-table {
   width: 100%;
@@ -63,6 +66,7 @@
 .admin-table td {
   padding: 1.125rem 1.375rem;
   color: #212529;
+  white-space: nowrap;
   font-size: 14px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
@@ -180,4 +184,14 @@
   color: #fff;
   background-color: #248afd;
   border-color: #248afd;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .admin-container {
+    padding: 20px 16px;
+  }
+  
 }
