@@ -50,7 +50,14 @@
 
 .airdrop-table-container {
   overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
 }
+
+.airdrop-table-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 
 .airdrop-table {
   width: 100%;

@@ -55,7 +55,14 @@
 }
 .admin-table-conta{
   overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
 }
+
+.admin-table-conta::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 
 .admin-table {
   width: 100%;
