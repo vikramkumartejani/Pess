@@ -144,7 +144,7 @@ const Airdrop = () => {
 
             {/* List Modal */}
             {isListOpen && selectedAirdrop && (
-                <div className="modal-overlay">
+                <div className="modal-overlay-list">
                     <div className="modal-container" ref={listModalRef}>
                         <div className="modal-header">
                             <h2>Airdrop application list</h2>

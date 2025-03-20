@@ -103,6 +103,21 @@
 .modal-overlay {
   position: fixed;
   top: 0;
+  padding-top: 140px;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-overlay-list {
+  position: fixed;
+  top: 0;
   overflow-y: scroll;
   left: 0;
   right: 0;
@@ -115,8 +130,8 @@
 }
 
 .modal-container {
+  padding: 0px 8px;
   background-color: white;
-  /* width: 900px; */
   max-width: 1140px;
   width: 100%;
   border-radius: 8px;
