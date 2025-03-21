@@ -94,7 +94,7 @@ const Calendar = () => {
                                         selectedDate.getFullYear() === currentYear
                                         ? "selected-day"
                                         : ""
-                                        } ${day === 20 ? "highlighted-day" : ""}`}
+                                        } ${day === 21 ? "highlighted-day" : ""}`}
                                     onClick={() => handleDateSelect(day)}
                                 >
                                     {day}
