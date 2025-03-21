@@ -4,8 +4,7 @@ import '../Styling/Sidebar.css';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
-
-
+import { IoClose } from "react-icons/io5";
 
 const links = [
   { path: '/dashboard', label: 'Dashboard' },
@@ -40,7 +39,7 @@ const links = [
   { path: '/notice', label: 'Notice' }
 ];
 
-function Sidebar() {
+function Sidebar({ isMobile, onClose }) {
   const location = useLocation();
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -71,8 +70,22 @@ function Sidebar() {
     return location.pathname === path || location.pathname.startsWith(`${path}/`);
   };
 
+  const handleLinkClick = () => {
+    if (isMobile && onClose) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isMobile ? 'mobile-sidebar' : ''}`}>
+      {isMobile && (
+        <div className="mobile-sidebar-header">
+          <button className="close-btn" onClick={onClose}>
+            <IoClose size={24} color="#333" />
+          </button>
+        </div>
+      )}
+      
       {links.map((link) => (
         <div key={link.label} className="nav-item">
           {link.subLinks ? (
@@ -91,6 +104,7 @@ function Sidebar() {
                       key={subLink.path}
                       to={subLink.path}
                       className={`sub-link ${isActive(subLink.path) ? 'active' : ''}`}
+                      onClick={handleLinkClick}
                     >
                       <GoDotFill size={10} /> {subLink.label}
                     </Link>
@@ -102,7 +116,7 @@ function Sidebar() {
             <Link
               to={link.path}
               className={`nav-link ${isActive(link.path) ? 'active' : ''}`}
-              onClick={() => setOpenMenu(null)}
+              onClick={handleLinkClick}
             >
               {link.label}
             </Link>
