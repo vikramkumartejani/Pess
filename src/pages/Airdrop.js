@@ -119,7 +119,7 @@ const Airdrop = () => {
             {/* Add Airdrop Modal */}
             {isModalOpen && (
                 <div className="modal-overlay">
-                    <div className="modal-container"ref={modalRef} >
+                    <div className="modal-container height-full"ref={modalRef} >
                         <div className="modal-header">
                             <h2>Add Airdrop</h2>
                             <button className="close-button" onClick={closeModal}>×</button>
@@ -132,7 +132,7 @@ const Airdrop = () => {
             {/* Details Modal */}
             {isDetails && selectedAirdrop && (
                 <div className="modal-overlay">
-                    <div className="modal-container" ref={detailsModalRef}>
+                    <div className="modal-container height-full" ref={detailsModalRef}>
                         <div className="modal-header">
                             <h2>Modify airdrop</h2>
                             <button className="close-button" onClick={closeDetails}>×</button>

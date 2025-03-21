@@ -50,12 +50,12 @@
 
 .airdrop-table-container {
   overflow: scroll;
-  scrollbar-width: none;  
-  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .airdrop-table-container::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .airdrop-table {
@@ -112,8 +112,7 @@
 .modal-overlay {
   position: fixed;
   top: 0;
-  padding-top: 140px;
-  padding-bottom: 20px;
+  padding: 140px 10px 20px 10px;
   overflow-y: scroll;
   left: 0;
   right: 0;
@@ -124,6 +123,7 @@
   align-items: center;
   z-index: 1000;
 }
+
 .modal-overlay-list {
   position: fixed;
   top: 0;
@@ -194,6 +194,7 @@
 .form-group select,
 .form-group textarea {
   outline: none;
+  width: 100%;
   padding: 10px 15px;
   height: 46px;
   border: 1px solid #ddd;
@@ -278,15 +279,15 @@
   color: #ff4747;
 }
 
-.modify-button{
+.modify-button {
   width: 100px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: #57B657;
-  border: 1px solid #57B657;
+  background-color: #57b657;
+  border: 1px solid #57b657;
   font-size: 0.875rem;
   line-height: 1;
   font-weight: 400;
@@ -295,24 +296,24 @@
   cursor: pointer;
   transition: all 0.3s;
 }
-.modify-button:hover{
+.modify-button:hover {
   color: #fff;
   background-color: #46a146;
   border-color: #429842;
 }
-.modify-button:active{
+.modify-button:active {
   box-shadow: 0 0 0 0.2rem rgba(112, 193, 112, 0.5);
 }
 
-.delete-button{
+.delete-button {
   width: 100px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #212529;
-  background-color: #FFC100;
-  border:1px solid #FFC100;
+  background-color: #ffc100;
+  border: 1px solid #ffc100;
   font-size: 0.875rem;
   line-height: 1;
   font-weight: 600;
@@ -322,18 +323,50 @@
   transition: all 0.3s;
 }
 
-.delete-button:focus{
+.delete-button:focus {
   color: #212529;
   background-color: #d9a400;
   border-color: #cc9a00;
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 6, 0.5);
 }
 
-
-
 /* Responsive */
 @media screen and (max-width: 1024px) {
-  .airdrop-maincontainer  {
+  .airdrop-maincontainer {
     padding: 20px 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form-row {
+    display: flex;
+    margin-bottom: 0px;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    padding: 12px 10px 10px 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-overlay-list {
+    position: fixed;
+    top: 0;
+    padding: 12px 10px 10px 10px;
+    left: 0;
+    right: 0;
+  }
+
+  .modal-container{
+    padding: 0px;
+  }
+
+  .height-full {
+    padding: 0px;
+    height: 100%;
+    overflow: scroll;
   }
 }
