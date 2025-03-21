@@ -2,9 +2,8 @@ import React from 'react';
 
 function Mining() {
   return (
-    <div>
+    <div className='admin-container'>
       <h1>Mining</h1>
-      {/* Add your Mining page content here */}
     </div>
   );
 }

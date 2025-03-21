@@ -7,7 +7,7 @@ import { GoDotFill } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 
 const links = [
-  { path: '/dashboard', label: 'Dashboard' },
+  { path: '/', label: 'Dashboard' },
   { path: '/admin', label: 'Admin' },
   { path: '/users', label: 'Users' },
   {

@@ -2,9 +2,8 @@ import React from 'react';
 
 function Users() {
   return (
-    <div>
+    <div className='admin-container'>
       <h1>Users</h1>
-      {/* Add your Users page content here */}
     </div>
   );
 }

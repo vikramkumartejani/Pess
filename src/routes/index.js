@@ -11,17 +11,21 @@ import Setting from '../pages/Setting';
 import SettingTwo from '../pages/SettingTwo';
 import History from '../pages/History';
 import HistoryTwo from '../pages/HistoryTwo';
+import Dashboard from '../pages/Dashboard';
+import SendToken from '../pages/SendToken';
+import WaitingForApproval from '../pages/WaitingForApproval';
 
 const routes = [
-  { path: '/', component: <Admin /> },
+  { path: '/', component: <Dashboard /> },
   { path: '/admin', component: <Admin /> },
   { path: '/users', component: <Users /> },
-  { path: '/multi-send', component: <MultiSend /> },
+  { path: '/send-token', component: <SendToken /> },
   { path: '/send-point', component: <SendPoint /> },
   { path: '/mining', component: <Mining /> },
   { path: '/withdrawal', component: <Withdrawal /> },
   { path: '/airdrop', component: <Airdrop /> },
   { path: '/notice', component: <Notice /> },
+  { path: '/waiting-for-approval', component: <WaitingForApproval /> },
   { path: '/setting', component: <Setting /> },
   { path: '/setting-two', component: <SettingTwo /> },
   { path: '/history', component: <History /> },

@@ -2,9 +2,8 @@ import React from 'react';
 
 function Withdrawal() {
   return (
-    <div>
+    <div className='admin-container'>
       <h1>Withdrawal</h1>
-      {/* Add your Withdrawal page content here */}
     </div>
   );
 }

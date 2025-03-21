@@ -2,7 +2,9 @@ import React from 'react'
 
 const HistoryTwo = () => {
   return (
-    <div>HistoryTwo</div>
+    <div className='admin-container'>
+      <h1>HistoryTwo</h1>
+    </div>
   )
 }
 
