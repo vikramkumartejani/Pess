@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import '../Styling/Sidebar.css';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
+
 
 
 const links = [
@@ -41,24 +43,24 @@ const links = [
 function Sidebar() {
   const location = useLocation();
   const [openMenu, setOpenMenu] = useState(null);
-  
+
   // Auto-open dropdown if current path matches a sublink
   useEffect(() => {
     const currentPath = location.pathname;
-    
+
     for (const link of links) {
       if (link.subLinks) {
-        const matchingSublink = link.subLinks.find(subLink => 
+        const matchingSublink = link.subLinks.find(subLink =>
           currentPath === subLink.path || currentPath.startsWith(`${subLink.path}/`)
         );
-        
+
         if (matchingSublink) {
           setOpenMenu(link.label);
           return;
         }
       }
     }
-    
+
     // If no matching sublink found, close all dropdowns
     setOpenMenu(null);
   }, [location.pathname]);
@@ -77,12 +79,12 @@ function Sidebar() {
         <div key={link.label} className="nav-item">
           {link.subLinks ? (
             <>
-              <div 
+              <div
                 className={`nav-link ${isActive(link.path) ? 'active' : ''}`}
                 onClick={() => toggleMenu(link.label)}
               >
                 {link.label}
-                <span className="arrow">{openMenu === link.label ? <MdKeyboardArrowDown size={16} /> : < MdKeyboardArrowRight size={16} /> }</span>
+                <span className="arrow">{openMenu === link.label ? <MdKeyboardArrowDown size={16} /> : < MdKeyboardArrowRight size={16} />}</span>
               </div>
               {openMenu === link.label && (
                 <div className="sub-menu">
@@ -92,7 +94,7 @@ function Sidebar() {
                       to={subLink.path}
                       className={`sub-link ${isActive(subLink.path) ? 'active' : ''}`}
                     >
-                      • {subLink.label}
+                      <GoDotFill size={10} /> {subLink.label}
                     </Link>
                   ))}
                 </div>
@@ -102,7 +104,7 @@ function Sidebar() {
             <Link
               to={link.path}
               className={`nav-link ${isActive(link.path) ? 'active' : ''}`}
-              onClick={() => setOpenMenu(null)}  
+              onClick={() => setOpenMenu(null)}
             >
               {link.label}
             </Link>
