@@ -85,7 +85,7 @@ function Sidebar({ isMobile, onClose }) {
           </button>
         </div>
       )}
-      
+
       {links.map((link) => (
         <div key={link.label} className="nav-item">
           {link.subLinks ? (

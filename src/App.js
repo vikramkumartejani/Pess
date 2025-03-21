@@ -20,11 +20,11 @@ function App() {
 
   return (
     <>
-      <Header 
-        toggleSidebar={toggleSidebar} 
-        toggleMobileSidebar={toggleMobileSidebar} 
+      <Header
+        toggleSidebar={toggleSidebar}
+        toggleMobileSidebar={toggleMobileSidebar}
       />
-      
+
       <div className='layout'>
         {/* Desktop Sidebar */}
         {sidebarVisible && (
@@ -32,7 +32,7 @@ function App() {
             <Sidebar isMobile={false} />
           </div>
         )}
-        
+
         {/* Mobile Sidebar */}
         {mobileSidebarOpen && (
           <div className='mobile-sidebar-overlay'>
@@ -41,7 +41,7 @@ function App() {
             </div>
           </div>
         )}
-        
+
         <main className='main-container' style={{ background: "#F5F7FF" }}>
           <Routes>
             {routes.map((route, index) => (
