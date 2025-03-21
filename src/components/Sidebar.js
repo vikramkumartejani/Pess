@@ -31,8 +31,8 @@ const links = [
     path: '/withdrawal',
     label: 'Withdrawal',
     subLinks: [
-      { path: '/setting', label: 'Setting' },
-      { path: '/history', label: 'History' },
+      { path: '/setting-two', label: 'Setting' },
+      { path: '/history-two', label: 'History' },
       { path: '/waiting-for-approval', label: 'Waiting for approval' },
     ]
   },
@@ -44,7 +44,6 @@ function Sidebar() {
   const location = useLocation();
   const [openMenu, setOpenMenu] = useState(null);
 
-  // Auto-open dropdown if current path matches a sublink
   useEffect(() => {
     const currentPath = location.pathname;
 
@@ -61,7 +60,6 @@ function Sidebar() {
       }
     }
 
-    // If no matching sublink found, close all dropdowns
     setOpenMenu(null);
   }, [location.pathname]);
 

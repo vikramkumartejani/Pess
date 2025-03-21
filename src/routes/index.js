@@ -7,6 +7,10 @@ import Withdrawal from '../pages/Withdrawal';
 import Airdrop from '../pages/Airdrop';
 import Notice from '../pages/Notice';
 import SendPoint from '../pages/SendPoint';
+import Setting from '../pages/Setting';
+import SettingTwo from '../pages/SettingTwo';
+import History from '../pages/History';
+import HistoryTwo from '../pages/HistoryTwo';
 
 const routes = [
   { path: '/', component: <Admin /> },
@@ -18,6 +22,10 @@ const routes = [
   { path: '/withdrawal', component: <Withdrawal /> },
   { path: '/airdrop', component: <Airdrop /> },
   { path: '/notice', component: <Notice /> },
+  { path: '/setting', component: <Setting /> },
+  { path: '/setting-two', component: <SettingTwo /> },
+  { path: '/history', component: <History /> },
+  { path: '/history-two', component: <HistoryTwo /> },
 ];
 
 export default routes;
