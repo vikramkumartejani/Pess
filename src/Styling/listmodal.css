@@ -32,9 +32,11 @@
 .list-modal-table th {
   padding: 12px;
   text-align: left;
+  white-space: nowrap;
   border-bottom: 1px solid #e8e8e8; 
 }
 .list-modal-table td {
+  white-space: nowrap;
   padding: 16px 12px;
   text-align: left;
 }
