@@ -1,7 +1,6 @@
 import React from 'react';
 import Admin from '../pages/Admin';
 import Users from '../pages/Users';
-import MultiSend from '../pages/MultiSend';
 import Mining from '../pages/Mining';
 import Withdrawal from '../pages/Withdrawal';
 import Airdrop from '../pages/Airdrop';

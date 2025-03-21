@@ -27,7 +27,43 @@ const ListModal = ({ airdrop }) => {
     };
 
     const downloadExcel = () => {
-        console.log('Downloading Excel file...');
+        // Create CSV content
+        const headers = ['UID', 'Address', 'Amount', 'Apply Date', 'Blocked'];
+        const csvContent = [
+            headers.join(','),
+            ...applicants.map(applicant => [
+                applicant.uid,
+                applicant.address,
+                applicant.amount,
+                applicant.applyDate,
+                applicant.blocked ? 'Yes' : 'No'
+            ].join(','))
+        ].join('\n');
+
+        // Create a Blob with the CSV content
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        
+        // Create a URL for the Blob
+        const url = URL.createObjectURL(blob);
+        
+        // Create a temporary link element
+        const link = document.createElement('a');
+        
+        // Set link attributes
+        link.setAttribute('href', url);
+        link.setAttribute('download', `applicants_round_${airdrop.round}_${new Date().toISOString().split('T')[0]}.csv`);
+        
+        // Append link to body (required for Firefox)
+        document.body.appendChild(link);
+        
+        // Trigger download
+        link.click();
+        
+        // Clean up
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        
+        console.log('Excel file downloaded successfully!');
     };
 
     return (
