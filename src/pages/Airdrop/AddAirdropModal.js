@@ -1,5 +1,6 @@
 import React from 'react'
 import Calendar from '../../components/Calendar'
+import FileUploadComponent from '../../components/FileUploadComponent'
 
 const AddAirdropModal = () => {
     return (
@@ -23,11 +24,11 @@ const AddAirdropModal = () => {
                 <div className="form-row">
                     <div className="form-group">
                         <label>Start date</label>
-                        <Calendar/>
+                        <Calendar />
                     </div>
                     <div className="form-group">
                         <label>End date</label>
-                        <Calendar/>
+                        <Calendar />
                     </div>
                 </div>
 
@@ -57,8 +58,7 @@ const AddAirdropModal = () => {
                     <div className="form-group banner-upload">
                         <label>Banner upload</label>
                         <div className="upload-container">
-                            <input type="text" placeholder="Upload Image" readOnly className='upload-file' />
-                            <button type="button" className="upload-button">Upload</button>
+                            <FileUploadComponent />
                         </div>
                     </div>
                 </div>

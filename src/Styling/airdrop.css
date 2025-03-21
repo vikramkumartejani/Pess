@@ -212,6 +212,7 @@
 
 .upload-container {
   display: flex;
+  width: 100%;
 }
 
 .upload-container .upload-file {
@@ -222,7 +223,7 @@
   border-bottom-left-radius: 4px;
   flex: 1;
   opacity: 1;
-  color: white;
+  color: black;
   border-right: 0;
 }
 
