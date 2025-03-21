@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../Styling/Sidebar.css';
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 
 const links = [
   { path: '/dashboard', label: 'Dashboard' },
@@ -79,7 +82,7 @@ function Sidebar() {
                 onClick={() => toggleMenu(link.label)}
               >
                 {link.label}
-                <span className="arrow">{openMenu === link.label ? 'v' : '>'}</span>
+                <span className="arrow">{openMenu === link.label ? <MdKeyboardArrowDown size={16} /> : < MdKeyboardArrowRight size={16} /> }</span>
               </div>
               {openMenu === link.label && (
                 <div className="sub-menu">

@@ -24,7 +24,7 @@ const SendPoint = () => {
         <div className='sendpoint-maincontainer'>
             {/* Input */}
             <div className='header-sendpoint-container'>
-                <div className="sendpoint-header">
+                <div className="sendpoint-header sendpint-h">
                     <h2 className="sendpoint-title">Send Point</h2>
                     <div className="sendpoint-buttons">
                         <button className="btn btn-upload" onClick={handleUpload}>
@@ -56,27 +56,29 @@ const SendPoint = () => {
                     <h2 className='sendpoint-title'>History</h2>
                 </div>
 
-                <table className='sendpoint-history-table'>
-                    <thead>
-                        <tr>
-                            <th>UID</th>
-                            <th>Amount</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>P1234567</td>
-                            <td>200</td>
-                            <td>2025-02-14 13:13:00</td>
-                        </tr>
-                        <tr>
-                            <td>P1234567</td>
-                            <td>200</td>
-                            <td>2025-02-14 13:13:00</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className='sendpoint-history-table-container'>
+                    <table className='sendpoint-history-table'>
+                        <thead>
+                            <tr>
+                                <th>UID</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P1234567</td>
+                                <td>200</td>
+                                <td>2025-02-14 13:13:00</td>
+                            </tr>
+                            <tr>
+                                <td>P1234567</td>
+                                <td>200</td>
+                                <td>2025-02-14 13:13:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );

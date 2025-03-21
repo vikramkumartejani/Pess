@@ -224,6 +224,7 @@
 .sendpoint-history-table th,
 .sendpoint-history-table td {
   padding: 1.125rem 1.375rem;
+  white-space: nowrap;
   color: #212529;
   font-size: 14px;
   text-align: left;
@@ -237,4 +238,31 @@
 .sendpoint-history-table th {
   font-weight: 800;
   color: #212529;
+}
+
+.sendpoint-history-table-container {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sendpoint-history-table-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .sendpoint-maincontainer {
+    padding: 20px 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sendpoint-header {
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .sendpint-h {
+    margin-bottom: 30px;
+  }
 }
