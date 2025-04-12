@@ -5,12 +5,11 @@ import FileUploadComponent from '../../components/FileUploadComponent';
 const DetailsModal = () => {
     const handleDelete = () => {
         const confirmDelete = window.confirm('Are you delete this Airdrop round?');
-        
-        // If user clicked OK
+
         if (confirmDelete) {
-          console.log('Item deleted');
+            console.log('Item deleted');
         }
-      };
+    };
     return (
         <form>
             <div className='airdrop-modal-content'>
@@ -33,11 +32,11 @@ const DetailsModal = () => {
                 <div className="form-row">
                     <div className="form-group">
                         <label>Start date</label>
-                        <Calendar/>
+                        <Calendar />
                     </div>
                     <div className="form-group">
                         <label>End date</label>
-                        <Calendar/>
+                        <Calendar />
                     </div>
                 </div>
 
@@ -67,7 +66,7 @@ const DetailsModal = () => {
                     <div className="form-group banner-upload">
                         <label>Banner upload</label>
                         <div className="upload-container">
-                        <FileUploadComponent />
+                            <FileUploadComponent />
                         </div>
                     </div>
                 </div>

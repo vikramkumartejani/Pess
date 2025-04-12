@@ -124,6 +124,21 @@
   z-index: 1000;
 }
 
+.modal-overlay-notice {
+  position: fixed;
+  top: 0;
+  padding: 20px 10px 20px 10px;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
 .modal-overlay-list {
   position: fixed;
   top: 0;
@@ -296,11 +311,13 @@
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .modify-button:hover {
   color: #fff;
   background-color: #46a146;
   border-color: #429842;
 }
+
 .modify-button:active {
   box-shadow: 0 0 0 0.2rem rgba(112, 193, 112, 0.5);
 }
@@ -336,6 +353,7 @@
     padding: 20px 16px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .form-row {
     display: flex;
@@ -343,6 +361,7 @@
     gap: 10px;
     flex-direction: column;
   }
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -360,7 +379,7 @@
     right: 0;
   }
 
-  .modal-container{
+  .modal-container {
     padding: 0px;
   }
 

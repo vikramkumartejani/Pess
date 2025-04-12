@@ -31,11 +31,11 @@ const Airdrop = () => {
     const openModal = () => {
         setIsModalOpen(true);
     };
-    
+
     const closeModal = () => {
         setIsModalOpen(false);
     };
-    
+
     const openDetail = (airdrop) => {
         setSelectedAirdrop(airdrop);
         setIsDetails(true);
@@ -119,12 +119,12 @@ const Airdrop = () => {
             {/* Add Airdrop Modal */}
             {isModalOpen && (
                 <div className="modal-overlay">
-                    <div className="modal-container height-full"ref={modalRef} >
+                    <div className="modal-container height-full" ref={modalRef} >
                         <div className="modal-header">
                             <h2>Add Airdrop</h2>
                             <button className="close-button" onClick={closeModal}>×</button>
                         </div>
-                       <AddAirdropModal />
+                        <AddAirdropModal />
                     </div>
                 </div>
             )}
@@ -137,7 +137,7 @@ const Airdrop = () => {
                             <h2>Modify airdrop</h2>
                             <button className="close-button" onClick={closeDetails}>×</button>
                         </div>
-                       <DetailsModal airdrop={selectedAirdrop} />
+                        <DetailsModal airdrop={selectedAirdrop} />
                     </div>
                 </div>
             )}
@@ -150,7 +150,7 @@ const Airdrop = () => {
                             <h2>Airdrop application list</h2>
                             <button className="close-button" onClick={closeList}>×</button>
                         </div>
-                       <ListModal airdrop={selectedAirdrop} />
+                        <ListModal airdrop={selectedAirdrop} />
                     </div>
                 </div>
             )}

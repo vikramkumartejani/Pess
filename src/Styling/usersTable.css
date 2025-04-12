@@ -1,0 +1,60 @@
+.user-container {
+     padding: 40px 55px;
+}
+
+.user-table-container {
+     background: white;
+     width: 100%;
+     border-radius: 16px;
+     padding: 10px 20px;
+}
+
+.user-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 14px;
+}
+
+.user-header .user-title {
+     color: #010101;
+     text-transform: capitalize;
+     font-size: 1.2rem !important;
+     margin: 1rem 0rem 0rem 0rem;
+     font-weight: 800;
+}
+
+.user-table-conta {
+     overflow: scroll;
+     scrollbar-width: none;
+     -ms-overflow-style: none;
+}
+
+.user-table-conta::-webkit-scrollbar {
+     display: none;
+}
+
+
+.user-table {
+     width: 100%;
+     border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+     padding: 1.125rem 1.375rem;
+     color: #212529;
+     white-space: nowrap;
+     font-size: 14px;
+     text-align: left;
+     border-bottom: 1px solid #e0e0e0;
+}
+
+.user-table tbody tr:last-child td {
+     border-bottom: none;
+}
+
+.user-table th {
+     font-weight: 800;
+     color: #212529;
+}
